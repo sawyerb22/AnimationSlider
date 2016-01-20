@@ -1,0 +1,215 @@
+//Google fonts
+@import url(https://fonts.googleapis.com/css?family=Varela+Round|Oxygen:400,300,700);
+
+//Variables
+$base-red: #E1615D;
+$secondary-red: #D1524E;
+$base-green: #74B363;
+$secondary-green: #69A25A;
+$base-blue: #41A9CC;
+$secondary-blue: #3798C2;
+$base-purple: #8A63B3;
+$secondary-purple: #7B57AF;
+$base-yellow: #FDBD57;
+$secondary-yellow: #F1B14B;
+$copy: #FFFDFD;
+
+//Scss Includes
+@import 'includes/slider';
+@import 'includes/animation';
+
+//Resets
+* {
+  font-family: 'Varela Round', sans-serif;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+//Styles
+.circle {
+  margin: 60px auto;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  img {
+    position: relative;
+  }
+  h2 {
+    color: $copy;
+    margin-top: 10px;
+  }
+}
+.total {
+  opacity: 0;
+  &.opa {
+    opacity: 1;
+  }
+}
+.bubbles {
+  width: 65px;
+  &.left {
+    position: absolute;
+    top: 65px;
+    left: -25px;
+  }
+  &.top {
+    position: absolute;
+    top: -25px;
+    left: 37%;
+  }
+  &.right {
+    position: absolute;
+    right: -25px;
+    top: 65px;
+  }
+}
+.dollar {
+  width: 75px;
+  &.left {
+    position: absolute;
+    left: -30px;
+    top: 120px;
+    width: 75px;
+  }
+  &.top {
+    position: absolute;
+    left: 87px;
+    top: 25px;
+  }
+  &.right {
+    position: absolute;
+    right: -30px;
+    top: 120px;
+    width: 75px;
+  }
+}
+.slide-red {
+  background-color: $base-red;
+  .circle {
+    background-color: $secondary-red;
+  }
+}
+.slide-green {
+  background-color: $base-green;
+  .circle {
+    background-color: $secondary-green;
+    .prospect {
+      margin-top: 115px;
+    }
+  }
+}
+.slide-blue {
+  background-color: $base-blue;
+  .circle {
+    background-color: $secondary-blue;
+  }
+}
+.slide-purple {
+  background-color: $base-purple;
+  .circle {
+    background-color: $secondary-purple;
+    .prospect {
+      margin-top: 70px;
+    }
+    h2 {
+      &:first-of-type {
+        position: relative;
+        top: 50px;
+      }
+      &:nth-of-type(2) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.slide-yellow {
+  background-color: $base-yellow;
+  .circle {
+    background-color: $secondary-yellow;
+  }
+}
+
+
+.disclaimer {
+  text-align: center;
+  h3 {
+    color: #00bbc6;
+  }
+  h4 {
+    text-transform: uppercase;
+    color: $base-purple;
+    font-size: 1.15em;
+  }
+  p {
+    padding: 25px;
+    color: #355E6C;
+  }
+  img {
+    position: relative;
+    display: block;
+    margin: 50px auto;
+    width: 100px;
+  }
+}
+.visual-container {
+
+}
+.copy-container {
+  position: relative;
+  top: 60px;
+  text-align: center;
+  h1 {
+    font-size: 1.3em;
+    color: $copy;
+  }
+  p {
+    font-size: 0.95em;
+    line-height: 23px;
+    color: $copy;
+    padding: 0 10%;
+  }
+}
+
+//Media Queries
+@media (max-width: 499px) {
+  .circle {
+    width: 250px;
+    height: 250px;
+    .prospect{
+      width: 80px;
+    }
+  }
+  .swiper-container-horizontal > .swiper-pagination {
+    top: 360px;
+  }
+  .slide-green .circle .prospect {
+    margin-top: 65px;
+  }
+  .slide-purple .circle .prospect {
+    margin-top: 55px;
+  }
+  .slide-purple .circle h2:first-of-type {
+    font-size: 1em;
+  }
+  .slide-blue .circle .prospect {
+    margin-top: 100px;
+  }
+  .slide-red .circle .prospect {
+    margin-top: 95px;
+  }
+}
+@media (min-width: 500px) {
+  .circle {
+    width: 350px;
+    height: 350px;
+  }
+  .swiper-container-horizontal > .swiper-pagination {
+    top: 460px;
+  }
+}

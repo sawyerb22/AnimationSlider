@@ -1,0 +1,77 @@
+//Swiper Overrides
+.swiper-container {
+  width: 100%;
+  max-width: 767px;
+  height: 100%;
+}
+/* hide on load for initial slide */
+.swiper-pagination {
+  display: none;
+}
+/* ===================== */
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: transparent;
+  border: 2px solid $copy;
+}
+.swiper-container-horizontal > .swiper-pagination {
+  top: 50%;
+}
+.swiper-pagination-bullet-active {
+  background: $copy;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: initial;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 45px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  margin-top: 0;
+  -moz-background-size: 0;
+  -webkit-background-size: 0;
+  background-size: 0;
+  background-position: initial;
+  background-image: none;
+  right: 0;
+  color: $copy;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  &.blue {
+    color: #00bbc6;
+    border-color: #00bbc6;
+  }
+  &:after {
+    content: 'Continue'
+  }
+}
+.start {
+  @extend .swiper-button-next;
+  z-index: 100;
+  &:after {
+    content: 'Get Started';
+  }
+}
+.join {
+  @extend .swiper-button-next;
+  z-index: 100;
+  &:after {
+    content: 'Lets Do It!';
+  }
+}
+.customer {
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  color: $copy;
+  font-size: .87em;
+}

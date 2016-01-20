@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="95px" height="57px" viewBox="0 0 95 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>cash140</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SuccessUnit" sketch:type="MSArtboardGroup" transform="translate(-143.000000, -329.000000)">
+            <g id="cash" sketch:type="MSLayerGroup" transform="translate(143.000000, 329.000000)">
+                <g id="Group">
+                    <path d="M89.3337563,0.0240368028 C92.3477157,0.0240368028 94.8071066,2.47579068 94.8071066,5.48039103 L94.8071066,50.9820587 C94.8071066,53.986659 92.3477157,56.4384129 89.3337563,56.4384129 L5.64213198,56.4384129 C2.62817259,56.4384129 0.168781726,53.986659 0.168781726,50.9820587 L0.168781726,5.50442783 C0.168781726,2.49982749 2.62817259,0.0480736055 5.64213198,0.0480736055 L89.3337563,0.0480736055 L89.3337563,0.0240368028 Z" id="Shape" fill="#33904A" sketch:type="MSShapeGroup"></path>
+                    <rect id="Rectangle-path" fill="#41CD64" sketch:type="MSShapeGroup" x="5.01522843" y="4.85543416" width="84.9936548" height="46.799655"></rect>
+                    <ellipse id="Oval" fill="#33904A" sketch:type="MSShapeGroup" cx="47.5" cy="28.2432432" rx="18.1560914" ry="18.0997125"></ellipse>
+                    <text id="140" sketch:type="MSTextLayer" font-family="Varela Round" font-size="14" font-weight="normal" fill="#FAFAFA">
+                        <tspan x="33.3305785" y="33.1824324">140</tspan>
+                    </text>
+                    <path d="M16.5888325,4.85543416 C16.5888325,11.2251869 11.4048223,16.4171363 4.99111675,16.4171363 C3.27918782,16.4171363 1.63959391,16.0325474 0.168781726,15.359517 L0.168781726,5.50442783 C0.168781726,2.49982749 2.62817259,0.0480736055 5.64213198,0.0480736055 L15.5279188,0.0480736055 C16.2271574,1.49028177 16.5888325,3.12478436 16.5888325,4.85543416 L16.5888325,4.85543416 Z" id="Shape" fill="#33904A" sketch:type="MSShapeGroup"></path>
+                    <path d="M16.5888325,51.6310523 C16.5888325,53.3376653 16.2030457,54.9721679 15.5279188,56.4384129 L5.64213198,56.4384129 C2.62817259,56.4384129 0.168781726,53.986659 0.168781726,50.9820587 L0.168781726,41.1269695 C1.63959391,40.453939 3.27918782,40.0693502 4.99111675,40.0693502 C11.4048223,40.093387 16.5888325,45.2612996 16.5888325,51.6310523 L16.5888325,51.6310523 Z" id="Shape" fill="#33904A" sketch:type="MSShapeGroup"></path>
+                    <path d="M94.8071066,41.1269695 L94.8071066,50.9820587 C94.8071066,53.986659 92.3477157,56.4384129 89.3337563,56.4384129 L79.4479695,56.4384129 C78.7728426,54.9721679 78.3870558,53.3376653 78.3870558,51.6310523 C78.3870558,45.2612996 83.571066,40.0693502 89.9847716,40.0693502 C91.7208122,40.093387 93.3362944,40.453939 94.8071066,41.1269695 L94.8071066,41.1269695 Z" id="Shape" fill="#33904A" sketch:type="MSShapeGroup"></path>
+                    <path d="M94.8071066,5.48039103 L94.8071066,15.3354802 C93.3362944,16.0085106 91.6967005,16.3930995 89.9847716,16.3930995 C83.5951777,16.3930995 78.3870558,11.2251869 78.3870558,4.83139735 C78.3870558,3.12478436 78.7728426,1.49028177 79.4479695,0.0240368028 L89.3337563,0.0240368028 C92.3477157,0.0240368028 94.8071066,2.47579068 94.8071066,5.48039103 Z" id="Shape" fill="#33904A" sketch:type="MSShapeGroup"></path>
+                    <text id="$" sketch:type="MSTextLayer" font-family="Varela Round" font-size="7.30909091" font-weight="normal" fill="#FAFAFA">
+                        <tspan x="5.49586777" y="9.3536036">$</tspan>
+                    </text>
+                    <text id="$" sketch:type="MSTextLayer" font-family="Varela Round" font-size="7.30909091" font-weight="normal" fill="#FAFAFA">
+                        <tspan x="6" y="51">$</tspan>
+                    </text>
+                    <text id="$-copy-2" sketch:type="MSTextLayer" font-family="Varela Round" font-size="7.30909091" font-weight="normal" fill="#FAFAFA">
+                        <tspan x="84.7933884" y="50.9339339">$</tspan>
+                    </text>
+                    <text id="$" sketch:type="MSTextLayer" font-family="Varela Round" font-size="7.30909091" font-weight="normal" fill="#FAFAFA">
+                        <tspan x="85" y="10">$</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
