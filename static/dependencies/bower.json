@@ -13,6 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "animate.css": "~3.5.1"
+    "animate.css": "~3.5.1",
+    "swiper": "~3.3.0",
+    "jquery": "~2.2.0"
   }
 }
