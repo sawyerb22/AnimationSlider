@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>package_small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, -23.000000)">
+            <g id="package_small" transform="translate(0.000000, 23.000000)" sketch:type="MSShapeGroup">
+                <path d="M28,23.826545 C28,24.914045 27.1184,25.794195 26.03235,25.794195 L2.41765,25.794195 C1.3316,25.794195 0.45,24.914045 0.45,23.826545 L0.45,2.179495 C0.45,1.093445 1.3316,0.211845 2.41765,0.211845 L26.03235,0.211845 C27.1184,0.211845 28,1.093445 28,2.179495 L28,23.826545 Z" id="Fill-893" fill="#A473B1"></path>
+                <path d="M2.060805,0.211845 C0.974755,0.211845 0.093155,1.10411604 0.093155,2.20331178 L0.093155,24.1123815 C0.093155,24.8226762 0.462905,25.4419827 1.016805,25.794195 L26.865955,0.627161949 C26.533905,0.370340514 26.125005,0.211845 25.675505,0.211845 L2.060805,0.211845 Z" id="Fill-894" fill="#F4D0A1"></path>
+                <path d="M17.804035,8.389265 L15.836385,6.421615 L13.868735,8.389265 L11.901085,6.421615 L9.931985,8.389265 L9.931985,0.517215 L17.804035,0.517215 L17.804035,8.389265 Z" id="Fill-896" fill="#FCF1E2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

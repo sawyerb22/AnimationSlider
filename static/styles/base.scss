@@ -33,7 +33,7 @@ a {
 
 //Styles
 .circle {
-  margin: 60px auto;
+  margin: 45px auto;
   border-radius: 100%;
   text-align: center;
   position: relative;
@@ -43,6 +43,22 @@ a {
   h2 {
     color: $copy;
     margin-top: 10px;
+  }
+}
+.packages {
+  position: relative;
+  top: 140px;
+  .package{
+    margin-right: 5px;
+  }
+  .large {
+    width: 90px;
+  }
+  .medium {
+    width: 60px;
+  }
+  .small {
+    width: 45px;
   }
 }
 .total {
@@ -75,7 +91,6 @@ a {
     position: absolute;
     left: -30px;
     top: 120px;
-    width: 75px;
   }
   &.top {
     position: absolute;
@@ -86,7 +101,12 @@ a {
     position: absolute;
     right: -30px;
     top: 120px;
-    width: 75px;
+  }
+}
+.slide-black {
+  background-color: #373837;
+  .circle {
+    background-color: #373837;
   }
 }
 .slide-red {
@@ -132,6 +152,7 @@ a {
   background-color: $base-yellow;
   .circle {
     background-color: $secondary-yellow;
+    margin: 30px auto;
   }
 }
 
@@ -160,9 +181,17 @@ a {
 .visual-container {
 
 }
+.cta {
+  .circle {
+    .phone {
+      top: 86px;
+      width: 95px;
+      margin-left: 25px;
+    }
+  }
+}
 .copy-container {
   position: relative;
-  top: 60px;
   text-align: center;
   h1 {
     font-size: 1.3em;
@@ -204,11 +233,117 @@ a {
     margin-top: 95px;
   }
 }
-@media (min-width: 500px) {
-  .circle {
-    width: 350px;
-    height: 350px;
+@media (max-width: 350px) {
+  .disclaimer {
+    img {
+      position: relative;
+      display: block;
+      margin: 25px auto;
+      width: 50px;
+    }
+    h4 {
+      font-size: .90em;
+    }
+    p{
+      font-size: 13px;
+    }
   }
+  .packages {
+    top: 70px;
+  }
+  .copy-container {
+    bottom: 40px;
+    top: auto;
+  }
+}
+@media (max-width: 320px){
+  .swiper-button-next, .start, .join {
+    height: 35px;
+    line-height: 35px;
+  }
+  .slide-black .circle {
+    width: 250px;
+    height: 220px;
+    margin: 35px auto 0 auto;
+  }
+  .slide-green .circle .prospect {
+    margin-top: 55px;
+  }
+  .slide-purple .circle .prospect {
+    margin-top: 40px;
+  }
+  .slide-purple .circle h2:first-of-type {
+    position: relative;
+    top: 35px;
+  }
+  .slide-purple .circle h2:nth-of-type(2) {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .slide-blue .circle .prospect {
+    margin-top: 80px;
+    width: 60px;
+  }
+  .slide-red .circle .prospect {
+    margin-top: 80px;
+    width: 58px;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    margin: 40px auto 65px auto;
+    .prospect {
+      width: 70px;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+  }
+  .packages {
+    top: 30px;
+  }
+  .large{
+    width: 80px
+  }
+  .medium{
+    width: 50px;
+  }
+  .small{
+    width: 30px;
+  }
+  .bubbles {
+    width: 55px;
+  }
+  .dollar {
+    width: 60px;
+    &.top {
+      left: 71px;
+      top: 18px;
+    }
+    &.left {
+      left: -28px;
+      top: 110px;
+    }
+    &.right {
+      right: -28px;
+      top: 110px;
+    }
+  }
+  .copy-container {
+    p {
+      line-height: 20px;
+      color: #FFFDFD;
+      padding: 0px 5%;
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 1em;
+    }
+  }
+}
+@media (min-width: 500px) {
+
   .swiper-container-horizontal > .swiper-pagination {
     top: 460px;
   }
