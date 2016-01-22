@@ -216,9 +216,9 @@ a {
 .cta {
   .circle {
     .phone {
-      top: 86px;
-      width: 95px;
-      margin-left: 25px;
+      top: 65px;
+      width: 75px;
+      margin-left: 30px;
     }
   }
 }
@@ -276,6 +276,49 @@ a {
   height: 100%;
   z-index: 300;
   text-align: center;
+  h3 {
+    margin-top: 0;
+    color: #AB7E36;
+  }
+  p {
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .two-col {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -mz-display: flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    .col {
+      width: calc(50% - 1px);
+      border-right: 2px solid #fff;
+      &:nth-of-type(2) {
+        border-right: none;
+      }
+    }
+  }
+  .total-money {
+    border-top: 2px solid #fff;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .five-percent {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    h3 {
+      margin-top: 8px;
+      margin-bottom: -10px;
+    }
+  }
 }
 .close {
   position: absolute;

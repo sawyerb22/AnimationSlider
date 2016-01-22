@@ -39,6 +39,7 @@ $(document).ready(function(){
     $(activeSlide).find('#bounceIn').addClass(animation_bounceIn);
     $(activeSlide).find('#bounceInDown').addClass(animation_bounceInDown);
     $(activeSlide).find('#bounceInLeft').addClass(animation_bounceInLeft);
+    $(activeSlide).find('.phone').addClass(animation_bounceInUp);
     $(activeSlide).find('#slideInLeft').addClass(animation_slideLeft);
     $(activeSlide).find('#zoomOutDown').addClass(animation_zoomOD);
     // Package Animations
@@ -84,11 +85,18 @@ $(document).ready(function(){
         }
       }, 500);
     }
-    var total = $(activeSlide).find('.total');
-    if ( total.length ) {
+    var $total = $(activeSlide).find('.total');
+    if ( $total.length ) {
       setTimeout(function(){
-        $(activeSlide).find('.total').addClass(animation_pulse + ' opa');
+        $total.addClass(animation_pulse + ' opa');
       }, 5500)
+    }
+
+    var $moreInfo = $(activeSlide).find('.more-info');
+    if ( $moreInfo.length ) {
+      setTimeout(function(){
+        $moreInfo.addClass(animation_pulse + ' opa');
+      }, 4500)
     }
 
     //Others Animation
@@ -103,20 +111,16 @@ $(document).ready(function(){
           if(othersIndex === others.length) { //when that is finished run dollar animation
             var checkload = $(activeSlide).find('.others .check');
             var checkIndex = 0;
-
             var checkDelay = setInterval(function(){
               if (checkIndex <= checkload.length){
                 $(checkload[checkIndex]).addClass(animation_zoomIn + ' opa');
                 checkIndex += 1;
-                // Animate the element's value from x to y:
-
-              } else{
+              }else{
                 clearInterval(checkDelay);
               }
             }, 700);
-
           }
-        } else{
+        }else{
           clearInterval(othersDelay);
         }
       }, 400);
