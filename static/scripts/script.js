@@ -16,10 +16,11 @@ $(document).ready(function(){
     initialSlide: 0,
     direction: 'horizontal',
     speed: 400,
-    parallax: true,
     loop: false,
+    pagination: '.swiper-pagination',
     paginationClickable: true,
     preloadImages: false,
+    IOSEdgeSwipeDetection: true,
     nextButton: '.swiper-button-next'
   })
 
@@ -33,7 +34,7 @@ $(document).ready(function(){
       $('.swiper-pagination').show();
       $('.swiper-button-next').removeClass('blue');
     }
-    //Set Animation
+    //Set Animations
     $(activeSlide).find('#pulse').addClass(animation_pulse);
     $(activeSlide).find('#bounceIn').addClass(animation_bounceIn);
     $(activeSlide).find('#bounceInDown').addClass(animation_bounceInDown);
@@ -90,73 +91,103 @@ $(document).ready(function(){
       }, 5500)
     }
 
+    //Others Animation
+    var others = $(activeSlide).find('.others .people');
+    var othersIndex = 0;
+    if(others.length >= 0) {
+      var othersDelay = setInterval(function(){
+        if (othersIndex <= others.length) { //run the bubble annimation
+          $(others[othersIndex]).addClass(animation_bounceIn + ' opa');
+          othersIndex += 1;
+          //Checkmark Animation
+          if(othersIndex === others.length) { //when that is finished run dollar animation
+            var checkload = $(activeSlide).find('.others .check');
+            var checkIndex = 0;
 
-
-  });
-
-
-  //Element Animations on Continue Click
-  $('.swiper-button-next').click(function(ev){
-    ev.preventDefault();
-    //Set Animation
-    $(activeSlide).find('#pulse').addClass(animation_pulse);
-    $(activeSlide).find('#bounceIn').addClass(animation_bounceIn);
-    $(activeSlide).find('#bounceInDown').addClass(animation_bounceInDown);
-    $(activeSlide).find('#bounceInLeft').addClass(animation_bounceInLeft);
-    $(activeSlide).find('#slideInLeft').addClass(animation_slideLeft);
-    $(activeSlide).find('#zoomOutDown').addClass(animation_zoomOD);
-
-    // Package Animations
-    var package = $(activeSlide).find('.package');
-    var packageIndex = 0;
-    if(package.length >= 0) {
-        var packageDelay = setInterval(function(){
-          if (packageIndex <= package.length) { //run the bubble annimation
-            $(package[packageIndex]).addClass(animation_bounceIn + ' opa');
-            packageIndex += 1;
-          }else{
-            clearInterval(packageDelay);
-          }
-        }, 500);
-      }
-    //Bubble Animation
-    var bubbles = $(activeSlide).find('.bubbles');
-    var bubblesIndex = 0;
-    if(bubbles.length >= 0) {
-      var bubblesDelay = setInterval(function(){
-        if (bubblesIndex <= bubbles.length) { //run the bubble annimation
-          $(bubbles[bubblesIndex]).addClass(animation_bounceIn + ' opa');
-          bubblesIndex += 1;
-          //Dollar Animation
-          if(bubblesIndex === bubbles.length) { //when that is finished run dollar animation
-            var dollarload = $(activeSlide).find('.dollar');
-            var dollarIndex = 0;
-
-            var dollarDelay = setInterval(function(){
-              if (dollarIndex <= dollarload.length){
-                $(dollarload[dollarIndex]).addClass(animation_bounceInDown + ' opa');
-                dollarIndex += 1;
+            var checkDelay = setInterval(function(){
+              if (checkIndex <= checkload.length){
+                $(checkload[checkIndex]).addClass(animation_zoomIn + ' opa');
+                checkIndex += 1;
                 // Animate the element's value from x to y:
 
               } else{
-                clearInterval(dollarDelay);
+                clearInterval(checkDelay);
               }
-            }, 900);
+            }, 700);
 
           }
         } else{
-          clearInterval(bubblesDelay);
+          clearInterval(othersDelay);
         }
-      }, 500);
-    }
-    var total = $(activeSlide).find('.total');
-    if ( total.length ) {
-      setTimeout(function(){
-        $(activeSlide).find('.total').addClass(animation_pulse + ' opa');
-      }, 5500)
+      }, 400);
     }
 
+
   });
+
+
+//  //Element Animations on Continue Click
+//  $('.swiper-button-next').click(function(ev){
+//    ev.preventDefault();
+//    //Set Animation
+//    $(activeSlide).find('#pulse').addClass(animation_pulse);
+//    $(activeSlide).find('#bounceIn').addClass(animation_bounceIn);
+//    $(activeSlide).find('#bounceInDown').addClass(animation_bounceInDown);
+//    $(activeSlide).find('#bounceInLeft').addClass(animation_bounceInLeft);
+//    $(activeSlide).find('#slideInLeft').addClass(animation_slideLeft);
+//    $(activeSlide).find('#zoomOutDown').addClass(animation_zoomOD);
+//
+//    // Package Animations
+//    var package = $(activeSlide).find('.package');
+//    var packageIndex = 0;
+//    if(package.length >= 0) {
+//        var packageDelay = setInterval(function(){
+//          if (packageIndex <= package.length) { //run the bubble annimation
+//            $(package[packageIndex]).addClass(animation_bounceIn + ' opa');
+//            packageIndex += 1;
+//          }else{
+//            clearInterval(packageDelay);
+//          }
+//        }, 500);
+//      }
+//    //Bubble Animation
+//    var bubbles = $(activeSlide).find('.bubbles');
+//    var bubblesIndex = 0;
+//    if(bubbles.length >= 0) {
+//      var bubblesDelay = setInterval(function(){
+//        if (bubblesIndex <= bubbles.length) { //run the bubble annimation
+//          $(bubbles[bubblesIndex]).addClass(animation_bounceIn + ' opa');
+//          bubblesIndex += 1;
+//          //Dollar Animation
+//          if(bubblesIndex === bubbles.length) { //when that is finished run dollar animation
+//            var dollarload = $(activeSlide).find('.dollar');
+//            var dollarIndex = 0;
+//
+//            var dollarDelay = setInterval(function(){
+//              if (dollarIndex <= dollarload.length){
+//                $(dollarload[dollarIndex]).addClass(animation_bounceInDown + ' opa');
+//                dollarIndex += 1;
+//                // Animate the element's value from x to y:
+//
+//              } else{
+//                clearInterval(dollarDelay);
+//              }
+//            }, 900);
+//
+//          }
+//        } else{
+//          clearInterval(bubblesDelay);
+//        }
+//      }, 500);
+//    }
+//    var total = $(activeSlide).find('.total');
+//    if ( total.length ) {
+//      setTimeout(function(){
+//        $(activeSlide).find('.total').addClass(animation_pulse + ' opa');
+//      }, 5500)
+//    }
+//
+//  });
   $('.more-info').click(function(e){
     e.preventDefault();
     $('.window-fog').addClass('animated flipInY').show();

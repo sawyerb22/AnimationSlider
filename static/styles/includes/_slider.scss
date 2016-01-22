@@ -9,11 +9,19 @@
   display: none;
 }
 /* ===================== */
-
+.swiper-pagination {
+  z-index: 1;
+  height: 20px;
+}
 .swiper-pagination-bullet {
   opacity: 1;
   background: transparent;
   border: 2px solid $copy;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  &:first-of-type {
+    display: none; //Hide the first bullet for the disclaimer page.
+  }
 }
 .swiper-container-horizontal > .swiper-pagination {
   top: 50%;
@@ -66,54 +74,7 @@
     content: 'Get Started!'
   }
 }
-.customer {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  color: $copy;
-  font-size: .87em;
-}
 
-.more-info {
-  z-index: 100;
-  position: relative;
-  position: relative;
-  top: 0;
-  border: none;
-  background: #F1B14B;
-  color: #fff;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 11px;
-  padding: 5px 10px;
-  outline: none;
-  cursor: pointer;
-  @media (max-width: 350px) {
-    top: 10px;
-  }
-}
-
-.window-fog {
-  display: none;
-  position: fixed;
-  background: #FDBD57;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 300;
-  text-align: center;
-}
-.close {
-  position: absolute;
-  right: 25px;
-  top: 15px;
-  font-size: 22px;
-  color: #fff;
-  cursor: pointer;
-}
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
   display: none;
